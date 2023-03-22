@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Javascript Navigation</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="responsive-nav.css">
+  </head>
+
+  <body>
+
+    <!-- navigation  -->
+    <header>
+
+      <div class="container">
+
+        <div class="logo">Logo</div>
+
+        <nav>
+          <div class="nav__close"><i class="bx bx-right-arrow-alt"></i></div>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div class="hamburger__menu">
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
+
+      </div>
+
+    </header>
+
+    <script>
+      const hambugerMenu = document.querySelector(".hamburger__menu");
+      const closeMenu = document.querySelector(".nav__close");
+      const navMenu = document.querySelector("nav");
+
+      hambugerMenu.addEventListener("click", () => {
+        navMenu.classList.add("nav__open");
+        navMenu.classList.remove("nav__back");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        navMenu.classList.remove("nav__open");
+        navMenu.classList.add("nav__back");
+      });
+    </script>
+
+  </body>
+
+</html>
