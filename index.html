@@ -23,7 +23,7 @@
         <div class="logo">Logo</div>
 
         <nav>
-          <div class="nav__close"><i class='bx bx-message-alt-x'></i></div>
+          <div class="close-nav"><i class='bx bx-message-alt-x'></i></div>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
@@ -31,7 +31,7 @@
           <a href="#">Contact</a>
         </nav>
 
-        <div class="hamburger__menu">
+        <div class="menu">
           <i class="bx bx-menu-alt-right"></i>
         </div>
 
@@ -40,18 +40,18 @@
     </header>
 
     <script>
-      const hambugerMenu = document.querySelector(".hamburger__menu");
-      const closeMenu = document.querySelector(".nav__close");
+      const hambugerMenu = document.querySelector(".menu");
+      const closeMenu = document.querySelector(".close-nav");
       const navMenu = document.querySelector("nav");
 
       hambugerMenu.addEventListener("click", () => {
-        navMenu.classList.add("nav__open");
-        navMenu.classList.remove("nav__back");
+        navMenu.classList.add("open-nav");
+        navMenu.classList.remove("back-nav");
       });
 
       closeMenu.addEventListener("click", () => {
-        navMenu.classList.remove("nav__open");
-        navMenu.classList.add("nav__back");
+        navMenu.classList.remove("open-nav");
+        navMenu.classList.add("back-nav");
       });
     </script>
 
