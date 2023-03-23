@@ -83,4 +83,9 @@
         .close-nav {
           display: none;
         }
+
+        .close-nav i {
+          cursor: pointer;
+        }
+
       }
